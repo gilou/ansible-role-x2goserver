@@ -5,7 +5,7 @@
     name: python-software-properties
 - name: x2go PPA
   apt_repos:
-    repo: ppa:x2go/stable
+    repo: "ppa:x2go/stable"
 - name: x2go server packages
   package:
     name: "{{ item }}"
