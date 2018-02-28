@@ -1,0 +1,14 @@
+---
+# tasks file for ansible-role-x2goserver
+- name: Dependencies
+  package:
+    name: python-software-properties
+- name: x2go PPA
+  apt_repos:
+    repo: ppa:x2go/stable
+- name: x2go server packages
+  package:
+    name: "{{ item }}"
+  with_items:
+    - x2goserver
+    - x2goserver-xsession
