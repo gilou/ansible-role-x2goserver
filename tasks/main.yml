@@ -4,7 +4,7 @@
   package:
     name: python-software-properties
 - name: x2go PPA
-  apt_repos:
+  apt_repository:
     repo: "ppa:x2go/stable"
 - name: x2go server packages
   package:
